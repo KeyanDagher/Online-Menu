@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Menu</title>
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(to right, yellow, red);
+		}
+		h1{
+			text-align: center;
+			font-size: 100px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		h5{
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.title{
+			animation-name: color;
+			animation-duration: 6s;
+			animation-iteration-count: infinite;
+			background-color: rgba(0, 0, 0, 0.3);
+			width: 1200px;
+			height: 400px;
+			margin-left: 100px;
+		}
+		.body{
+			background-color: rgba(255, 255, 255, 0.8);
+			height: 900px;
+			width: 1200px;
+			margin-top: 40px;
+			margin-left: 100px;
+		}
+		.navbar{
+			overflow: hidden;
+			background-color: darkorange;
+			width: 1200px;
+			margin-left: 100px;
+		}
+		.navbar a{
+			float: left;
+			display: block;
+			font-size: 20px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.navbar a:hover{
+			background-color: white;
+			color: black;
+		}
+		.footer{
+			padding: 20px;
+			text-align: center;
+			background-color: ivory;
+			margin-top: 20px;
+		}
+		.button{
+			font-size: 25px;
+			text-align: center;
+			color: black;
+			border: none;
+			font-weight: bold;
+			border-radius: 15px;
+			background-color: white;
+			position: absolute;
+			margin-left: 50px;
+			text-decoration: none;
+			padding: 14px 6px;
+		}
+		td{
+			width: 240px;
+			height: 240px;
+			background-repeat: no-repeat;
+			background-size: 240px 240px;
+		}
+		table{
+			margin-left: 230px;
+		}
+		@keyframes color{
+			from{transform: translateX(0px); color: blue;}
+			to{transform: translateX(0px); color: purple;}
+		}
+	</style>
+</head>
+<body>
+<div class="title">
+<h1>Menu</h1>
+<h5>Welcome to  .....  scroll down to see what the resturant has to offer!</h5>
+</div>
+<div class="navbar">
+  	<a href="#">Home</a>
+  	<a href="index.html#items">Items</a>
+  	<a href="index.html#info">Help</a>
+  	<a href="Aboutus.html" target="_blank">About us</a>
+</div>
+<div class="body" id="items">
+	<table>
+		<tr>
+			<td style="background-image: url(Mains.jpeg);"><a class="button" href="Menu.html" target="_blank">Main Dishes</a></td>
+			<td style="background-image: url(break.jpg);"><a class="button" href="Menu.html" target="_blank">Break Fast</a></td>
+			<td style="background-image: url(lunch.jpg);"><a class="button" href="Menu.html" target="_blank">Lunch</a></td>
+		</tr>
+		<tr>
+			<td style="background-image: url(dinner.jpg);"><a class="button" href="Menu.html" target="_blank">Dinner</a></td>
+			<td style="background-image: url(snacks.jpg);"><a class="button" href="Menu.html" target="_blank">Snacks</a></td>
+			<td style="background-image: url(desserts.jpg);"><a class="button" href="Menu.html" target="_blank">Desserts</a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-image: url(drinks.jpg);"><a class="button" href="Menu.html" target="_blank">Drinks</a></td>
+		</tr>
+	</table>
+</div>
+<div class="footer" id="info">
+  	<h2>Contact Info And Help: ____.____@___.___</h2>
+ </div>
+</body>
+</html>
